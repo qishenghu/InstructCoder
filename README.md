@@ -10,7 +10,7 @@ CodeInstruct is the first dataset designed to adapt LLMs for general code editin
 
 **Please check out [our blog](https://blog.nus.edu.sg/kaixinli/2023/05/23/codeinstruct/) with more details.**
 
-**You can also read [our paper]().**
+**You can also read [our paper](./CodeInstruct.pdf).**
 
 # Data Collection
 To generate instructional data for code editing, we employed a similar method to Self-Instruct. This methodology of generating training data using LLMs requires minimal human-labeled data as seed tasks while still maintaining the quality and relevance of the tasks in the dataset. CodeInstruct is systematically expanded through an iterative process that commences with editing data sourced from GitHub commits as seed tasks. Seed and generated tasks are used subsequently bootstrapped to prompt ChatGPT for more task data. 
@@ -176,3 +176,14 @@ print(game_data)
 Now the script is not able to access the data in `game_data`.
 
 
+# Citation
+Feel free to cite this repo if you use the data or code in this repo.
+```bibtex
+@misc{2023codeinstruct,
+ title={CodeInstruct: Empowering Language Models to Edit Code}, 
+ url={https://github.com/qishenghu/CodeInstruct}, 
+ year = {2023},
+ publisher = {GitHub},
+ journal = {GitHub repository},
+ author={Hu, Qisheng and Li, Kaixin and Zhao, Xu and Xie, Yuxi and Liu, Tiedong and Chen, Hui and Xie, Qizhe and He, Junxian}} 
+```
