@@ -1,0 +1,8 @@
+datasketch==1.5.9
+numpy==1.23.2
+openai==0.27.0
+pandas==1.5.3
+rouge_score==0.1.2
+tenacity==8.2.2
+tiktoken==0.3.3
+tqdm==4.64.1

@@ -13,7 +13,9 @@ CodeInstruct is the first dataset designed to adapt LLMs for general code editin
 **You can also read [our paper](./CodeInstruct.pdf).**
 
 # Data Collection
-To generate instructional data for code editing, we employed a similar method to Self-Instruct. This methodology of generating training data using LLMs requires minimal human-labeled data as seed tasks while still maintaining the quality and relevance of the tasks in the dataset. CodeInstruct is systematically expanded through an iterative process that commences with editing data sourced from GitHub commits as seed tasks. Seed and generated tasks are used subsequently bootstrapped to prompt ChatGPT for more task data. 
+To generate instructional data for code editing, we employed a similar method based on [Self-Instruct](https://github.com/yizhongw/self-instruct). This methodology of generating training data using LLMs requires minimal human-labeled data as seed tasks while still maintaining the quality and relevance of the tasks in the dataset. CodeInstruct is systematically expanded through an iterative process that commences with editing data sourced from GitHub commits as seed tasks. Seed and generated tasks are used subsequently bootstrapped to prompt ChatGPT for more task data. 
+
+For each generated instruction, we also prompt ChatGPT to generate a list of practical events as 'real-world' scenarios where the editing instruction could be performed, and randomly select one for subsequent generation. During instance generation, ChatGPT is instructed to generate examples that correspond with the operation in the instruction while ensuring the codebases and variable names are appropriate for the given scenario. We observe that instances generated with the inclusion of a scenario demonstrate higher quality in terms of richer context and code structure compared to those without. 
 
 
 # Results and Examples
@@ -27,7 +29,7 @@ We are planning to release the following assets:
 - [x] Test data: 134 github commit data.
 - [x] Github seed data: A total of 634 github commit data.
 - [x] Additional seed data: 592 unused generated samples.
-- [ ] TODO: Source Code
+- [x] Source code for generating data
 - [ ] TODO: Checkpoints
 
 We are currently working on a clean release of our code. We will upload the code as soon as we finish the job.
