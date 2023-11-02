@@ -12,6 +12,9 @@ InstructCoder is the first dataset designed to adapt LLMs for general code editi
 
 **You can also read [our paper](https://arxiv.org/abs/2310.20329).**
 
+# Updates
+[2023-11-2] The dataset on GitHub is temporarily unavailable due to the limited quota of Git Large File Storage. Please download it from [Huggingface](https://huggingface.co/datasets/happylkx/InstructCoder) instead.
+
 # Data Collection
 To generate instructional data for code editing, we employed a similar method based on [Self-Instruct](https://github.com/yizhongw/self-instruct). This methodology of generating training data using LLMs requires minimal human-labeled data as seed tasks while still maintaining the quality and relevance of the tasks in the dataset. InstructCoder is systematically expanded through an iterative process that commences with editing data sourced from GitHub commits as seed tasks. Seed and generated tasks are used subsequently bootstrapped to prompt ChatGPT for more task data. 
 
