@@ -1,4 +1,4 @@
-# InstructCoder: Empowering Language Models for Code Editing
+# InstructCoder: Instruction Tuning Large Language Models for Code Editing
 
 **[Paper](https://arxiv.org/abs/2310.20329) | [Dataset](https://huggingface.co/datasets/happylkx/InstructCoder) | [Blog](https://blog.nus.edu.sg/kaixinli/2023/05/23/codeinstruct/)**
 
@@ -187,12 +187,11 @@ Now the script is not able to access the data in `game_data`.
 # Citation
 Feel free to cite this work if you use the data or code in this repo.
 ```bibtex
-@misc{hu2023instructcoder,
-      title={InstructCoder: Empowering Language Models for Code Editing}, 
-      author={Qisheng Hu and Kaixin Li and Xu Zhao and Yuxi Xie and Tiedong Liu and Hui Chen and Qizhe Xie and Junxian He},
-      year={2023},
-      eprint={2310.20329},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@inproceedings{li2024instructcoder,
+  title={Instructcoder: Instruction tuning large language models for code editing},
+  author={Li, Kaixin and Hu, Qisheng and Zhao, James and Chen, Hui and Xie, Yuxi and Liu, Tiedong and Shieh, Michael and He, Junxian},
+  booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 4: Student Research Workshop)},
+  pages={50--70},
+  year={2024}
 }
 ```
